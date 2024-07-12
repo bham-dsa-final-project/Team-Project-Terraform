@@ -1,11 +1,11 @@
 terraform {
-  backend "s3" {
-    bucket         = "infra-as-code2323"
-    key            = "path/to/your/terraform.tfstate"
-    region         = "eu-west-2"
-    dynamodb_table = "table1"
-    encrypt        = true
-  }
+  # backend "s3" {
+  #   bucket         = "infra-as-code2323"
+  #   key            = "path/to/your/terraform.tfstate" #tfstate file
+  #   region         = "eu-west-2"
+  #   dynamodb_table = "table1" #lockstate file
+  #   encrypt        = true
+  # }
 
   required_providers {
     aws = {
